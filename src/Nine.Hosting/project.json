@@ -1,0 +1,27 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Hosting environment for dynamic client side development based on DNX",
+  "authors": [ "Yufei Huang" ],
+  "tags": [ "graphics, realtime rendering, 3d" ],
+  "projectUrl": "https://github.com/studio-nine/Nine.Hosting",
+  "licenseUrl": "https://github.com/studio-nine/Nine.Hosting/blob/master/LICENSE",
+
+  "dependencies": {
+    "Microsoft.Framework.CommandLineUtils": { "version": "1.0.0-*", "type": "build" },
+    "Microsoft.Framework.Runtime.Abstractions": "1.0.0-beta5",
+    "SharedMemory": "1.1.4"
+  },
+  
+  "compilationOptions": {
+    "allowUnsafe": true
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Windows.Forms": "4.0.0.0",
+        "System.Drawing": "4.0.0.0"
+      }
+    }
+  }
+}
