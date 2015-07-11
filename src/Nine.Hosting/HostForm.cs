@@ -32,6 +32,7 @@
 
         public HostForm(string appName, int? width, int? height, bool topMost)
         {
+            MinimizeBox = false;
             BackColor = Color.FromArgb(60, 60, 60);
             Controls.Add(label);
             Text = appName;
