@@ -1,12 +1,12 @@
 # Nine.Hosting
 
-With *Nine.Hosting*, you can develop client side applications in a really dynamic and interactive way like never before, just make changes to your C# source code and hit save in any editor, your application will automatically be refreshed according to your changes *instantly*!
+With *Nine.Hosting*, you can develop client side applications in a dynamic and interactive way like never before, just make changes to your C# source code and hit save in any editor, your application will automatically be refreshed according to your changes *instantly*!
 
 ![Intro](intro.gif)
 
 ### Getting Started
 
-- Creates an dnx console application under *Visual C#* -> *Web*
+- Creates a dnx console application under *Visual C#* -> *Web*
 - Add *Nine.Hosting* to `project.json` dependencies section.
 - Add a `dev` command that looks like `"dev": "Nine.Hosting --pin"`
 - Dependency inject `IHostWIndow` interface, and call `hostWindow.Attach(handleToYourWindow)` after the main window is created.
