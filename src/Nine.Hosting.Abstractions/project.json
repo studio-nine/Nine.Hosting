@@ -1,0 +1,21 @@
+﻿{
+  "version": "1.0.0-*",
+  "description": "Hosting environment for dynamic client side development based on DNX",
+  "authors": [ "Yufei Huang" ],
+  "projectUrl": "https://github.com/studio-nine/Nine.Hosting",
+  "licenseUrl": "https://github.com/studio-nine/Nine.Hosting/blob/master/LICENSE",
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10.0"
+      }
+    },
+    "dnxcore50": {
+      "dependencies": {
+        "System.Runtime": "4.0.20-beta-*",
+        "System.IO": "4.0.10-beta-*"
+      }
+    }
+  }
+}
