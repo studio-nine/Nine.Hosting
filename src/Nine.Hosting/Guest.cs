@@ -111,7 +111,17 @@
             }
         }
 
-        public unsafe Stream GetStream(string name, int sizeInBytes)
+        public Stream Read(string name)
+        {
+            MemoryMappedFile mmf;
+            if (mmfMap.TryGetValue(name, out mmf))
+            {
+                return mmf.CreateViewStream();
+            }
+            return null;
+        }
+
+        public Stream Write(string name, int sizeInBytes)
         {
             var mmf = mmfMap.GetOrAdd(name, key =>
             {

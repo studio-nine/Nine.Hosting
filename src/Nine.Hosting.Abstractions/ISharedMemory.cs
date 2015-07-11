@@ -4,7 +4,8 @@
 
     public interface ISharedMemory
     {
-        Stream GetStream(string name, int sizeInBytes);
+        Stream Read(string name);
+        Stream Write(string name, int sizeInBytes);
 
         bool Remove(string name);
     }
