@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "Nine.Hosting": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "dnx451": {
+      "frameworkAssemblies": {
+        "System.Runtime": "4.0.10.0",
+        "System.Drawing": "4.0.0.0",
+        "System.Windows.Forms": "4.0.0.0"
+      }
+    }
+  },
+
+  "commands": {
+    "dev": "Nine.Hosting --pin",
+    "run": "Nine.Hosting.Test"
+  }
+}
